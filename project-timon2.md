@@ -25,106 +25,40 @@ subtitle: Agora
   <!--hr class="mark"-->
 </div>
 
-
- Braços manipuladores estão cada vez mais presentes na dinâmica humana. No universo da produção automoblisitica, já é bastante comum notar a presença de robôs manipuladores exercecendo várias funções, principalmente como pintura e sodagem. Os manipualdores vem ganhando espaço em função de sual alta cpacidade de repetividade e  e da qualidade das opeções. Para garantir a repetividade, qualiade e além de ampliar a quantidade de aplicações, várias pesquisas e projetos estão sendo desenvolvido nos principais centro de pesquisa do mundo. 
-
-
-
-O Projeto Timon2 tem por obejtivo realizar uma operação completamente autonona com o braço manipulador [JeRoTimon](https://braziliansinrobotics.com/project-jerotimon/), que foi desenvolvido em 2020 por um grupo de pesquisadores e especialista em robótica. A operação confere na busca e identificação de um marcador visual posicionado em uma caixa que está presente no ambiente, e após identificação, o robô deve pressionar o botão que também esta alocada na caixa. Esta operação ultizar plicações de **cinematica inversa**, que é crucial para a realização de operações autônomo com os braços manipuladores, **visão computacional** e **intregação de sistemas**.
  
+Braços manipuladores estão cada vez mais presentes na dinâmica humana. No universo da produção automobilística, já é bastante comum notar a presença de robôs manipuladores exercendo várias funções, principalmente pintura e soldagem. Os manipuladores vem ganhando espaço em função de sua alta capacidade de repetitividade e da qualidade das operações. Para garantir a produtividade, qualidade e além de ampliar a quantidade de aplicações, várias pesquisas e projetos estão sendo desenvolvidos nos principais centros de pesquisa do mundo.
+
+
+
+O Projeto Timon2 tem por objetivo realizar uma operação completamente autônoma com o braço manipulador [JeRoTimon](https://braziliansinrobotics.com/project-jerotimon/), que foi desenvolvido em 2020 por um grupo de pesquisadores e especialista em robótica. A operação confere na busca e identificação de um marcador visual posicionado em uma caixa que está presente no ambiente, e após identificação, o robô deve pressionar o botão que também está alocado na caixa. Esta operação utiliza aplicações de **cinemática inversa**, que é crucial para a realização de operações autônomo com os braços manipuladores, **controle de trajetória e  posicionamento**, **visão computacional** e **integração de sistemas**.
 
 
 ## Um pouco sobre o Timon2
 <p style="text-align: justify;">
-  Timon2 foi inicializado em teve 18/02/2021 e deve ter sua finalização concluída em 17/03/2021. Este projet foi dividio em 5 etapas: Conceitual, Desgin, Simulação, Intregação e testes e conclusão. Estas etapas foram montando de acordo com Framework de projetos Robótica ultilizado pelo RASC e considerando as  principáis etapas que devem ser executadas para garantir o sucesso do projeto.
+
+Timon2 foi inicializado em teve 18/02/2021. Este projeto foi dividido em 5 etapas: Conceitual, Design, Simulação, Integração e testes e conclusão. Estas etapas foram montadas de acordo com Framework de projetos Robótica utilizado pelo RASC e considerando as principais etapas que devem ser executadas para garantir o sucesso do projeto.
+
 </p>
 
 
 ## Sistemas do Timon2
 <p style="text-align: justify;">
-Quase todo sistema robótico pode ser fracionado em conjuntos menores.  Timon2 foi divido  em 5 grupos: atuação, software, sensoriamento e alimentação. Esta fragemnetação ajuda a vizualização do robô diante de suas funcionalades e dos sues equpimantos. O Prototype strucre breakdown que apresenta da divisão do Timon2 em sistemas menores auxlia na vizualição dos equipamentos.  
-</p>
+Quase todo sistema robótico pode ser fracionado em conjuntos menores.  Timon2 foi dividido  em 5 grupos: atuação, software, sensoriamento e alimentação. Esta fragmentação ajuda a visualização do robô diante de suas funcionalidades e dos sues equipamentos. O Prototype structure breakdown que apresenta a divisão do Timon2 em sistemas menores  e auxilia na visualização dos equipamentos.
 
 <center>
 <img src="{{ 'assets/img/timon2/pbs.png' | relative_url }}" width="800" text-align=center alt="ga" />
 </center>
 
-<p style="text-align: justify;">
-  Durante a navegação, o robô deve encontrar obstáculos que podem dificultar a execução da missão. Para tratar os eventuais obstáculos serão implementados sensores que ajudarão na tarefa de evita-lós.
-</p>
-<p style="text-align: justify;">
-  O sensor ultrassônico, implementado na parte frontal do robô, proverá informações da existência de obstáculos que podem estar a frente do robô.
-  Enquanto um Lidar, juntamente com uma câmera de profundidade Mynteye serão utilizados para tornar este sistema robótico capaz de realizar a técnica SLAM, que irá permitir a construção do mapa e localização de forma simultânea.
-</p>
+<br/>
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-3je9{background-color:#464646;border-color:#ffffff;color:#FFF;text-align:center;vertical-align:middle}
-.tg .tg-7ogr{background-color:#464646;border-color:#ffffff;color:#ffffff;text-align:center;vertical-align:top}
-.tg .tg-dbpp{background-color:#464646;border-color:#ffffff;color:#ffffff;text-align:left;vertical-align:top}
-</style>
-<table class="tg">
-<thead>
-  <tr>
-    <th class="tg-7ogr"><span style="font-weight:bold">Componentes</span><br></th>
-    <th class="tg-7ogr"><span style="font-weight:bold">Modelo</span></th>
-    <th class="tg-7ogr"><span style="font-weight:700;font-style:normal">Fabricante</span></th>
-    <th class="tg-7ogr"><span style="font-weight:700;font-style:normal">Aplicação</span></th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="tg-dbpp"><img src="{{ 'assets/img/aperea/jetson_nano.png' | relative_url }}" width="100" alt="jetson" ></td>
-    <td class="tg-3je9">Jetson Nano</td>
-    <td class="tg-3je9">NVIDIA</td>
-    <td class="tg-3je9">Unidade de processamento</td>
-  </tr>
-  <tr>
-    <td class="tg-dbpp"><img src="{{ 'assets/img/aperea/cameraV2.png' | relative_url }}" width="100" alt="camerav2" ></td>
-    <td class="tg-3je9">Câmera Module V2</td>
-    <td class="tg-3je9">RaspberryPi</td>
-    <td class="tg-3je9">Detectar a TAG e a esfera</td>
-  </tr>
-  <tr>
-    <td class="tg-dbpp"><img src="{{ 'assets/img/aperea/mynteye.png' | relative_url }}" width="100" alt="mynteye"></td>
-    <td class="tg-3je9">Câmera Stereo S1030</td>
-    <td class="tg-3je9">Mynt eye</td>
-    <td class="tg-3je9">Detectar obstáculos, localização e mapeamento</td>
-  </tr>
-  <tr>
-    <td class="tg-dbpp"><img src="{{ 'assets/img/aperea/sensorultr.png' | relative_url }}" width="100" alt="sensorultr"></td>
-    <td class="tg-3je9">Sensor Ultrassônico HC-SR04</td>
-    <td class="tg-3je9">HC-SR04</td>
-    <td class="tg-3je9">Detectar obstáculos</td>
-  </tr>
-  <tr>
-    <td class="tg-dbpp"><img src="{{ 'assets/img/aperea/lidar.png' | relative_url }}" width="100" alt="lidar"></td>
-    <td class="tg-3je9"><span style="font-weight:400;font-style:normal">Lidar LDS-01</span></td>
-    <td class="tg-3je9">Robotis</td>
-    <td class="tg-3je9">Mapeamento e localização</td>
-  </tr>
-  <tr>
-    <td class="tg-dbpp"><img src="{{ 'assets/img/aperea/motordc.png' | relative_url }}" width="100" alt="motor"></td>
-    <td class="tg-3je9">Motor DC 3-6v</td>
-    <td class="tg-3je9">Rob</td>
-    <td class="tg-3je9">Deslocamento</td>
-  </tr>
-</tbody>
-</table>
+O sistema mecânico é composto por 5 servomotores Dynamixel. Estes servomotores já possuem um controle de posição, trajetória e torque que foi implementado pelo seu desenvolvedor. O sistema de sensoriamento possui a câmera digital que será utilizada para detectar o marcador visual.
+ 
+Os softwares que permitem a realização da cinemática inversa, controle de trajetória e posição do manipulador estão presentes no pacote  Moveit, numa versão é designada para o  ROS1 versão Noetic que foi projetado para o Ubuntu 20.04.  O pacote de software possui uma interface com as linguagens de programação C++ e Python,  o que permite o uso de programas desenvolvidos em ambas línguas para realizar interação com o manipulador. No atual projeto a interface com braço robótico será realizada usando a linguagem C + +. Para fornecer energia para o sistema será usado uma fonte 24V.
 
-<p style="text-align: justify;">
-  A fim de identificar a TAG e a esfera colorida, a câmera V2 Raspberry Pi será utilizada para captar os dados visuais do ambiente. Os dados visuais serão processados com uso da biblioteca de visão computacional OpenCV.
-</p>
-<p style="text-align: justify;">
-  Como mencionado anteriormente, o processamento dos dados que serão coletados pelos sensores será realizado pela placa Nvidia Jetson Nano. A placa conterá o sistema operacional Ubuntu 20.04, que permitirá a instalação da plataforma ROS, Robot Operation System, versão Noetic. 
-</p>
-<p style="text-align: justify;">
-  Também será desenvolvido um sistema de gerenciamento de energia para monitorar a carga do sistema. A tabela acima apresenta mais informações com relação aos principais componentes que compõem o sistema do Aperea.
-</p>
+
+O desenvolvimento deste projeto envolve áreas importantes de grande importância para robótica, principalmente a industrial. Brevemente teremos alguns post que demonstram a dinâmica das atividades que serão executadas para garantir o sucesso do projeto.
+
+
 <br/>
 
 <center>
@@ -136,7 +70,7 @@ Quase todo sistema robótico pode ser fracionado em conjuntos menores.  Timon2 f
 <table class="table-borderless highlight">
 <thead>
 <tr>
-<th><center><img src="{{ 'assets/img/people/juliana-1.png' | relative_url }}" width="100" alt="juliana" class="img-fluid rounded-circle" /></center></th>
+<th><center><img src="{{ 'assets/img/people/mateusseixas-1.png' | relative_url }}" width="100" alt="juliana" class="img-fluid rounded-circle" /></center></th>
 <th></th>
 <th><center><img src="{{ 'assets/img/people/matheusanselmo-1.png'| relative_url }}" width="100" alt="matheusanselmo" class="img-fluid rounded-circle"/></center></th>
 <th></th>
@@ -145,14 +79,14 @@ Quase todo sistema robótico pode ser fracionado em conjuntos menores.  Timon2 f
 </thead>
 <tbody>
 <tr class="font-weight-bolder" style="text-align: center margin-top: 0">
-  <td width="33.33%">Juliana Santana</td>
+  <td width="33.33%">Mateus Seixas</td>
   <td></td>
   <td width="33.33%">Matheus Anselmo</td>
   <td></td>
   <td width="33.33%">Marco Reis</td>
   </tr>
 <tr style="text-align: center" >
-<td style="vertical-align: top"><small>Pesquisadora Jr. do projeto <br>Engenheira Eletricista.</small></td>
+<td style="vertical-align: top"><small>Pesquisador Jr. do projeto <br>Engenheiro Eletricista.</small></td>
 <td></td>
 <td style="vertical-align: top"><small>Pesquisador Jr. do projeto <br>Engenheiro de Controle e Automação.</small></td>
 <td></td>
