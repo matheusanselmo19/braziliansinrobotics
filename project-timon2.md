@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Timon2
-subtitle: Agora
+subtitle: Timon@Noetic
 ---
 {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
 {%- capture site_tags -%}
@@ -30,19 +30,18 @@ Braços manipuladores estão cada vez mais presentes na dinâmica humana. No uni
 
 
 
-O Projeto Timon2 tem por objetivo realizar uma operação completamente autônoma com o braço manipulador [JeRoTimon](https://braziliansinrobotics.com/project-jerotimon/), que foi desenvolvido em 2020 por um grupo de pesquisadores e especialista em robótica. A operação confere na busca e identificação de um marcador visual posicionado em uma caixa que está presente no ambiente, e após identificação, o robô deve pressionar o botão que também está alocado na caixa. Esta operação utiliza aplicações de **cinemática inversa**, que é crucial para a realização de operações autônomo com os braços manipuladores, **controle de trajetória e  posicionamento**, **visão computacional** e **integração de sistemas**.
+O Projeto Timon2 tem por objetivo realizar uma operação completamente autônoma com o braço manipulador [JeRoTimon](https://braziliansinrobotics.com/project-jerotimon/), que foi desenvolvido em 2020 por um grupo de pesquisadores e especialista em robótica. O JeRoTimon foi desenvolvido inicialmente para o ROS1 versão Melodic. A operação confere na busca e identificação de um marcador visual posicionado em uma caixa que está presente no ambiente, e após identificação, o robô deve pressionar o botão que também está alocado na caixa. Esta operação utiliza aplicações de **cinemática inversa**, que é crucial para a realização de operações autônomo com os braços manipuladores, **controle de trajetória e  posicionamento**, **visão computacional** e **integração de sistemas**.
 
 
 ## Um pouco sobre o Timon2
-<p style="text-align: justify;">
 
-Timon2 foi inicializado em teve 18/02/2021. Este projeto foi dividido em 5 etapas: Conceitual, Design, Simulação, Integração e testes e conclusão. Estas etapas foram montadas de acordo com Framework de projetos Robótica utilizado pelo RASC e considerando as principais etapas que devem ser executadas para garantir o sucesso do projeto.
 
-</p>
+Timon2 foi inicializado em teve 18/02/2022. Este projeto foi dividido em 5 etapas: Conceitual, Design, Simulação, Integração e testes e conclusão. Estas etapas foram montadas de acordo com Framework de projetos Robótica utilizado pelo RASC e considerando as principais etapas que devem ser executadas para garantir o sucesso do projeto.
+
 
 
 ## Sistemas do Timon2
-<p style="text-align: justify;">
+
 Quase todo sistema robótico pode ser fracionado em conjuntos menores.  Timon2 foi dividido  em 5 grupos: atuação, software, sensoriamento e alimentação. Esta fragmentação ajuda a visualização do robô diante de suas funcionalidades e dos sues equipamentos. O Prototype structure breakdown que apresenta a divisão do Timon2 em sistemas menores  e auxilia na visualização dos equipamentos.
 
 <center>
@@ -53,10 +52,12 @@ Quase todo sistema robótico pode ser fracionado em conjuntos menores.  Timon2 f
 
 O sistema mecânico é composto por 5 servomotores Dynamixel. Estes servomotores já possuem um controle de posição, trajetória e torque que foi implementado pelo seu desenvolvedor. O sistema de sensoriamento possui a câmera digital que será utilizada para detectar o marcador visual.
  
-Os softwares que permitem a realização da cinemática inversa, controle de trajetória e posição do manipulador estão presentes no pacote  Moveit, numa versão é designada para o  ROS1 versão Noetic que foi projetado para o Ubuntu 20.04.  O pacote de software possui uma interface com as linguagens de programação C++ e Python,  o que permite o uso de programas desenvolvidos em ambas línguas para realizar interação com o manipulador. No atual projeto a interface com braço robótico será realizada usando a linguagem C + +. Para fornecer energia para o sistema será usado uma fonte 24V.
+Os softwares que permitem a realização da cinemática inversa, controle de trajetória e posição do manipulador estão presentes no pacote  Moveit, numa versão é designada para o  ROS1 versão Noetic que foi projetado para o Ubuntu 20.04.  O pacote de software possui uma interface com as linguagens de programação C++ e Python,  o que permite o uso de programas desenvolvidos em ambas línguas para realizar interação com o manipulador. No atual projeto a interface com braço robótico será realizada usando a linguagem C ++. Para fornecer energia para o sistema será usado uma fonte 24V.
 
 
-O desenvolvimento deste projeto envolve áreas importantes de grande importância para robótica, principalmente a industrial. Brevemente teremos alguns post que demonstram a dinâmica das atividades que serão executadas para garantir o sucesso do projeto.
+
+
+O desenvolvimento deste projeto envolve áreas importantes de grande importância para robótica, principalmente a industrial. Brevemente teremos alguns posts que demonstram a dinâmica das atividades que serão executadas para garantir o sucesso do projeto.
 
 
 <br/>
@@ -97,24 +98,7 @@ O desenvolvimento deste projeto envolve áreas importantes de grande importânci
 </div>
 </div>
 
-<br>
 
-### Resumo do Projeto
-1. Categoria: 
-2. Prazo: 04 meses
-3. Data de início: <font color="#fbb117">10/maio/2021</font>
-4. Data de término: <font color="#fbb117">20/agosto/2021</font>
-5. Repositório URL: 
-6. Sponsor: <a href="http://www.senaicimatec.com.br/en/"><font color="#fbb117">Senai CIMATEC</font></a>
-7. Recursos materiais: US$
-8. Apresentação URL:
-9. Report URL: 
-10. Artigos relacionados: 
-
-<br>
-
-##### Referência
-1. <a href="https://jetbot.org/master"><font color="#fbb117">JETBOT</font></a>. Acesso em: 4 de Junho de 2021.
 
 
 
@@ -138,4 +122,4 @@ O desenvolvimento deste projeto envolve áreas importantes de grande importânci
           {%- endfor -%}
       </div>
   {%- endfor -%}
-</div>
+</div>âmica da
