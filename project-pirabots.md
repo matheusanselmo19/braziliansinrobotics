@@ -8,13 +8,13 @@ subtitle: Autonomous Functionalities Implementation
 <center><img src="{{ 'assets/img/pirabots/pirabots.png' | relative_url }}" alt="PIRABOTS" width="380"/></center>
 
 
-Nos ROVs, praticamente todas as ações de movimentação e percepção do ambiente são executadas exclusivamente por operadores humanos. Operadores humanos tendem a ser mais suscetíveis a erros do que sistemas autônomos. A adaptação de algumas tarefa funcionalidade para uma responsabilidade de sistema autônomo deve aumentar a qualidade das operações e aliviar uma as ações do operador, já que este não será incubido para todas as ações do veículo
+Nos ROVs, praticamente todas as ações de movimentação e percepção do ambiente são executadas exclusivamente por operadores humanos. Operadores humanos tendem a ser mais suscetíveis a erros do que sistemas autônomos. A adaptação de algumas tarefa funcionalidade para uma responsabilidade de sistema autônomo deve aumentar a qualidade das operações e aliviar uma as ações do operador, já que este não será icunbido para todas as ações do veículo
 
 Realização de implementação de funções autônomas nos veículos submarinos: Blue ROV e Bir-ROV. As ações que serão implementadas têm um foco inicial voltado para a execução da movimentação autônoma dos robôs. Os movimentos Surge, yaw e heave, que são os principais para navegação submersa, serão o s primeiros a serem desenvolvidos. Além do desenvolvimento do robô físico, será realizado simulações com objetivo de emular e testar as funcionalidades dos sistemas previamente da realização da aplicação do mundo real para obter o conhecimento sobre o comportamento  dos veículos
 
 ### Os veículos
 
-O **BIR-ROV** é um ROV porte desenvolvido pelo por dois engenheiros robotisista: Frederico e Matheus Menezes. O BIR-ROV possui 6 thrusters para a realização das ações de movimentações.
+O **BIR-ROV** é um ROV porte desenvolvido pelo por dois engenheiros robotisistas: [Frederico Oliveira](https://www.linkedin.com/in/frederico-goliveira/) e [Matheus Menezes](https://www.linkedin.com/in/mateussmenezes/). O BIR-ROV possui 6 thrusters para a realização das ações de movimentações.
 <br>
 
 
@@ -22,7 +22,7 @@ O **BIR-ROV** é um ROV porte desenvolvido pelo por dois engenheiros robotisista
 
 
 
-O **BlueROV2** é um famoso ROV desenvolvido pela companhia norte americana Blue Robotics que é usado para bastantes em pesquisas, inspeções e monitoramentos de ambiente submarino. Assim como o BIR-ROV, O BlueROV2 possui 6 Thrusters para movimentação que permite  6 graus de liberdade. Seu Principal elemento de percepção é um câmera digital, porém outros sensores podem ser aclopados.
+O **BlueROV2** é um famoso ROV desenvolvido pela companhia norte americana [Blue Robotics](https://bluerobotics.com/). Este veículo é  bastante usado em pesquisas, inspeções e monitoramentos de ambiente submarino. Assim como o BIR-ROV, O BlueROV2 possui 6 Thrusters para movimentação que permite  6 graus de liberdade. Seu Principal elemento de percepção é uma câmera digital, porém outros sensores podem ser aclopados.
 
 
 
@@ -33,7 +33,7 @@ O **BlueROV2** é um famoso ROV desenvolvido pela companhia norte americana Blue
 
 ### Principais Ferramentas
 
-Para alcançar os objetivos, diversas ferramentas seram utilizadas durante a execução do projeto. O ROS é a principal framework que será usada para para a intregração dos sistemas. Para a simulação, O Gazebo será utilizado juntamente com ROS. Várias linguagem de programação serão utilizadas, C++ e Python devido bom seus interfaceamentos ROS teram usos relaventes. 
+Para alcançar os objetivos, diversas ferramentas seram utilizadas durante a execução do projeto. O ROS é a principal framework que será usada para para a intregração dos sistemas. Para a simulação, O Gazebo será utilizado juntamente com ROS. Várias linguagem de programação serão utilizadas, C++ e Python devido bom seus interfaceamentos ROS teram usos relevantes. 
 
 <br>
 
